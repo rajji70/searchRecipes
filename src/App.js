@@ -3,8 +3,8 @@ import Recipe from "./component/Recipe";
 import React, { useEffect, useState } from "react";
 
 function App() {
-  const APP_ID = "d30ea125";
-  const APP_Key = "8c075768501bafb349550b18d9437252";
+  const APP_ID = process.env.APP_ID;
+  const APP_Key = process.env.APP_KEY;
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
