@@ -1,3 +1,4 @@
+require('dotenv').config()
 import "./App.css";
 import Recipe from "./component/Recipe";
 import React, { useEffect, useState } from "react";
